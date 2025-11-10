@@ -14,7 +14,7 @@ def mul(a, b):
     return a*b
 
 def div(a, b):
-    return a/b
+    return a/b if b!=0 else "Can't divide by zero."
 
 def get_number(a, b):
     while(True):
@@ -37,3 +37,4 @@ elif op == "/":
 
 else:
     print("Invalid operation")
+
